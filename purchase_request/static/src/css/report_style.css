@@ -1,0 +1,20 @@
+body {
+    color: #666;
+    font-size: 12pt;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+table tr td {
+    padding: 5px 10px;
+}
+
+.table tr td {
+    padding: 8px 10px !important;
+}
+
+.table thead tr td {
+    font-weight:700;
+    color: #fff;
+    border: none;
+    background-color: #33b5e5;
+}

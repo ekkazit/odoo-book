@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_widget_form">
+        <field name="name">widget.form</field>
+        <field name="model">widget.test</field>
+        <field name="arch" type="xml">
+            <form string="Widget Form">
+                <header>
+                    <field name="status" widget="statusbar" statusbar_visible="dft,appr"/>
+                </header>
+                <sheet>
+                    <!--<widget name="web_ribbon" bg_color="bg-success" title="Paid"/>-->
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" icon="fa-inbox" type="object">
+                            <field string="Product Count" name="product_count" widget="statinfo"/>
+                        </button>
+                        <button class="oe_stat_button" icon="fa-dollar" type="object">
+                            <field string="Product Price" name="product_price" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="my_date" widget="daterange"/>
+                            <field name="my_time" widget="float_time"/>
+                            <field name="my_email" widget="email"/>
+                            <field name="my_phone" widget="phone"/>
+                            <field name="my_url" widget="url"/>
+                            <field name="my_money" widget="monetary"/>
+                            <field name="my_rating" widget="priority"/>
+                            <field name="my_gender" widget="radio" options="{'horizontal': true}"/>
+                            <field name="is_published" widget="boolean_toggle"/>
+                        </group>
+                        <group>
+                            <field name="user_signature" widget="signature"/>
+                            <field name="user_image" widget="image"/>
+                            <field name="user_attachments" widget="many2many_binary"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="product_list">
+                            <tree>
+                                <field name="id" widget="handle"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                        <field name="my_html" widget="html"/>
+                        <field name="products1" widget="many2many_checkboxes"/>
+                        <field name="products2" widget="many2many_tags"/>
+                        <field name="progress_percent" widget="progressbar"/>
+                        <field name="gauge_percent" widget="gauge">
+                            Gauge Percent
+                        </field>
+                        <field name="pie_percent" widget="percentpie"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+</odoo>

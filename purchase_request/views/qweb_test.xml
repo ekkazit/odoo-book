@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <report
+            id="action_qweb_test"
+            string="Qweb Test"
+            model="pr.pr"
+            report_type="qweb-html"
+            file="purchase_request.qweb_test"
+            name="purchase_request.qweb_test"
+            print_report_name="'PR Form - %s' % (object.name)"
+    />
+
+    <template id="qweb_test">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-set="count" t-value="20"/>
+                <t t-esc="count"/>
+
+                <t t-set="login" t-value="'admin'"/>
+                <t t-set="password" t-value="'admin'"/>
+                <t t-if="login == 'admin' and password == 'admin'">
+                    <strong>Login OK</strong>
+                </t>
+                <t t-else="">
+                    <strong>Login Failed!!</strong>
+                </t>
+
+                <t t-set="sports" t-value="['Football', 'Badminton', 'Running', 'Tennis']"/>
+                <t t-foreach="sports" t-as="s">
+                    <div>
+                        <span t-esc="s_index + 1"/>
+                        <span t-esc="s"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

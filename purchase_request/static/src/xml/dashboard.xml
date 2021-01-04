@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="my_counter_template">
+        <h1 class="counter">
+            <button id="btnMinus" class="btn btn-primary">-</button>
+            <span id="result"/>
+            <button id="btnPlus" class="btn btn-primary">+</button>
+        </h1>
+    </t>
+
+    <t t-name="my_dashboard_template">
+        <div class="container-fluid mt-4 mb-4">
+            <h1 class="mb-4">แดชบอร์ด</h1>
+            <div class="row mb-4">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title m-0">Counter</h3>
+                        </div>
+                        <div class="card-body">
+                            <span id="my_counter"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title m-0">Pie Chart</h3>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="pie-chart" width="100%" height="50px"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title m-0">Bar Chart</h3>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="bar-chart" width="100%" height="50px"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $.get('/api/product/chart/bestseller', function (data) {
+              names = []
+              values = []
+              $.each(data.rows, function (index, vals) {
+                names.push(vals[0]);
+                values.push(vals[1]);
+              });
+              pieChart(names, values);
+              barChart(names, values);
+            });
+
+            function pieChart(names, values) {
+              new Chart(document.getElementById("pie-chart"), {
+                type: 'pie',
+                data: {
+                  labels: names,
+                  datasets: [{
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: values,
+                  }]
+                },
+                options: {
+                  title: {
+                    display: true,
+                    text: 'สินค้าขายดี'
+                  }
+                }
+              });
+            }
+
+            function barChart(names, values) {
+              new Chart(document.getElementById("bar-chart"), {
+                type: 'bar',
+                data: {
+                  labels: names,
+                  datasets: [{
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: values,
+                  }]
+                },
+                options: {
+                  legend: {
+                    display: false
+                  },
+                  title: {
+                    display: true,
+                    text: 'สินค้าขายดี 2020'
+                  }
+                }
+              });
+            }
+        </script>
+    </t>
+</templates>

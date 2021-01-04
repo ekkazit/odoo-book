@@ -1,0 +1,1253 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20201102\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-16 09:21+0000\n"
+"PO-Revision-Date: 2020-11-16 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__product_count
+msgid "# Products"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.actions.report,print_report_name:purchase_request.action_pr_form_report
+msgid "'PR Form - %s' % (object.name)"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_header
+msgid "(สำนักงานใหญ่)"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid ""
+"<i class=\"fa fa-edit\"/>\n"
+"                                        Edit"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid ""
+"<i class=\"fa fa-times\"/>\n"
+"                                        Delete"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.report_pr_form
+msgid ""
+"<span>Page:</span>\n"
+"                        <span class=\"page\"/>\n"
+"                        <span>of</span>\n"
+"                        <span class=\"topage\"/>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "<strong>Note</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "<strong>ผู้ขอซื้อ</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "<strong>ผู้จัดจำหน่าย</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "<strong>ผู้ตรวจสอบ</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "<strong>ผู้อนุมัติ</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "<strong>วันที่</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "<strong>หมายเหตุ</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "<strong>เลขที่</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "<strong>แผนก</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "<strong>โครงการ</strong>"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "Action"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_product_wizard
+msgid "Add Product"
+msgstr "เพิ่มสินค้า"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Add multiple products..."
+msgstr "เพิ่มสินค้า..."
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "Address"
+msgstr "ที่อยู่"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__amount
+msgid "Amount"
+msgstr "จำนวนเงิน"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__pr_pr__state__approve
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__status__appr
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Approve"
+msgstr "อนุมัติ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Approved"
+msgstr "อนุมัติ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__approve_id
+msgid "Approver"
+msgstr "ผู้อนุมัติ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__model_id
+msgid "Automatically created field to link to parent mytest.base_model"
+msgstr ""
+
+#. module: purchase_request
+#. openerp-web
+#: code:addons/purchase_request/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Bar Chart"
+msgstr "กราฟแท่ง"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__budget
+msgid "Budget"
+msgstr "งบประมาณ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_kanban
+msgid "Budget:"
+msgstr "งบประมาณ"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__pr_pr__state__cancel
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_cancel_wizard
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_product_wizard
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Cancelled"
+msgstr "ยกเลิกแล้ว"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__category_id
+msgid "Category Id"
+msgstr "ประเภทสินค้า"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__child_id
+msgid "Child Categories"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.actions.act_window,help:purchase_request.action_pr_list
+msgid "Click this to create the first PR"
+msgstr "คลิกที่นี่เพื่อสร้างเอกสาร PR"
+
+#. module: purchase_request
+#: model_terms:ir.actions.act_window,help:purchase_request.action_project_list
+msgid "Click this to create the first project"
+msgstr "คลิกที่นี่เพื่อสร้างโปรเจ็กต์"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "Code"
+msgstr "รหัส"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__company_id
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__complete_name
+msgid "Complete Name"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__status__comp
+msgid "Completed"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_cancel_wizard
+msgid "Confirm"
+msgstr "ตกลง"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_cost_method
+msgid "Costing Method"
+msgstr ""
+
+#. module: purchase_request
+#. openerp-web
+#: code:addons/purchase_request/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Counter"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__create_uid
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__create_date
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "Customer"
+msgstr "ลูกค้า"
+
+#. module: purchase_request
+#: model:ir.actions.client,name:purchase_request.action_dashboard
+#: model:ir.ui.menu,name:purchase_request.menu_dashboard
+msgid "Dashboard"
+msgstr "แดชบอร์ด"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__department
+msgid "Department"
+msgstr "แผนก"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_search
+msgid "Department Search"
+msgstr "ค้นหาแผนก"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_kanban
+msgid "Department:"
+msgstr "แผนก"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Description"
+msgstr "รายละเอียด"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_report_purchase_request_report_pr_form__display_name
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_cancel_wizard
+msgid "Do you want to cancel"
+msgstr "คุณต้องการยกเลิกหรือไม่?"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__pr_pr__state__draft
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__status__dft
+msgid "Draft"
+msgstr "แบบร่าง"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__duration_days
+msgid "Duration Days"
+msgstr "จำนวนวัน"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_email
+msgid "Email"
+msgstr "อีเมล์"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__end_date
+msgid "End Date"
+msgstr "วันที่สิ้นสุด"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_form
+msgid "Enter project name"
+msgstr "กรอกชื่อโปรเจ็กต์"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_account_expense_categ_id
+msgid "Expense Account"
+msgstr "ค่าใช้จ่าย"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_gender__2
+msgid "Female"
+msgstr "หญิง"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__field1
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__field1
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__field1
+msgid "Field1"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__field2
+msgid "Field2"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__field3
+msgid "Field3"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__removal_strategy_id
+msgid "Force Removal Strategy"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_product_product__gallery
+#: model:ir.model.fields,field_description:purchase_request.field_product_template__gallery
+msgid "Gallery"
+msgstr "รูปภาพ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__gauge_percent
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_widget_form
+msgid "Gauge Percent"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_gender
+msgid "Gender"
+msgstr "เพศ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_search
+msgid "HR"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_html
+msgid "HTML"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_rating__3
+msgid "High"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_search
+msgid "ICT"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__id
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__id
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__id
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__id
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__id
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__id
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__id
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__id
+#: model:ir.model.fields,field_description:purchase_request.field_report_purchase_request_report_pr_form__id
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_needaction
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_has_error
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__image
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__user_image
+msgid "Image"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_account_income_categ_id
+msgid "Income Account"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_valuation
+msgid "Inventory Valuation"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__is_active
+msgid "Is Active"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__is_published
+msgid "Is Publish"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_report_purchase_request_report_pr_form____last_update
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__write_uid
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__write_date
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_rating__1
+msgid "Low"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_gender__1
+msgid "Male"
+msgstr ""
+
+#. module: purchase_request
+#: model:res.groups,name:purchase_request.group_pr_manager
+msgid "Manager"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_valuation
+msgid ""
+"Manual: The accounting entries to value the inventory are not posted automatically.\n"
+"        Automated: An accounting entry is automatically created to value the inventory when a product enters or leaves the company.\n"
+"        "
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_money
+msgid "Money"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.ui.menu,name:purchase_request.manu_dashboard
+msgid "My Dashboard"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_date
+msgid "My Date"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_time
+msgid "My Time"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_gender__3
+msgid "N/A"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model2__name
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__name
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model__name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__name
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__name
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "Name"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__pr_project__type__n
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_rating__2
+msgid "Normal"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__note
+msgid "Note"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_widget_test__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_cancel_wizard
+msgid "OK"
+msgstr "ตกลง"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Other"
+msgstr "อื่นๆ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__pr_id
+msgid "PR"
+msgstr "ใบขอซื้อ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__date_pr
+msgid "PR Date"
+msgstr "วันที่"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "PR Form"
+msgstr "แบบฟอร์มใบขอซื้อ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__pr_id
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__pr_id
+msgid "PR ID"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__pr_lines
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "PR Line"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_list
+msgid "PR List"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.module.category,name:purchase_request.module_pr
+msgid "PR Module"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_cancel_wizard__pr_name
+msgid "PR Name"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__parent_id
+msgid "Parent Category"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_phone
+msgid "Phone"
+msgstr "โทรศัพท์"
+
+#. module: purchase_request
+#. openerp-web
+#: code:addons/purchase_request/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "Pie Chart"
+msgstr "กราฟวงกลม"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__pie_percent
+msgid "Pie Percent"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_account_creditor_price_difference_categ
+msgid "Price Difference Account"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Print"
+msgstr "พิมพ์"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__product_id
+msgid "Product"
+msgstr "สินค้า"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__product_count
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_widget_form
+msgid "Product Count"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_product_wizard
+msgid "Product Form"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__product_list
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_product_wizard
+msgid "Product List"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__product_price
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_widget_form
+msgid "Product Price"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_product_template
+msgid "Product Template"
+msgstr "รูปแบบสินค้า"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_product_multi_wizard__product_ids
+msgid "Products"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__products1
+msgid "Products1"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__products2
+msgid "Products2"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__progress_percent
+msgid "Progress Bar"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__project_id
+msgid "Project"
+msgstr "โครงการ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_calendar
+msgid "Project Calendar"
+msgstr "ปฏิทินโครงการ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_form
+msgid "Project Form"
+msgstr "แบบฟอร์มโครงการ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_list
+msgid "Project List"
+msgstr "รายการโครงการ"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_project_form
+msgid "Project Name"
+msgstr "ชื่อโครงการ"
+
+#. module: purchase_request
+#: code:addons/purchase_request/models/pr.py:0
+#, python-format
+msgid "Project budget invalid amount!"
+msgstr "งบประมาณไม่ถูกต้อง!"
+
+#. module: purchase_request
+#: model:ir.actions.act_window,name:purchase_request.action_project_list
+#: model:ir.ui.menu,name:purchase_request.menu_projects
+#: model:ir.ui.menu,name:purchase_request.menu_projects_action
+msgid "Projects"
+msgstr "โครงการ"
+
+#. module: purchase_request
+#: model:ir.actions.report,name:purchase_request.action_pr_form_report
+msgid "Purchase Request Form"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.actions.act_window,name:purchase_request.action_pr_list
+#: model:ir.ui.menu,name:purchase_request.menu_purchase_request
+msgid "Purchase Requisition"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__putaway_rule_ids
+msgid "Putaway Rules"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__qty
+msgid "Qty"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_rating
+msgid "Rating"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Remark ..."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__responsible_id
+msgid "Responsible"
+msgstr "ผู้รับผิดชอบ"
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__pr_pr__state__revise
+msgid "Revise"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Revise to Draft"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__route_ids
+msgid "Routes"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_sale_order
+msgid "Sales Order"
+msgstr "ใบสั่งขาย"
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_pr_form
+msgid "Select Products"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__removal_strategy_id
+msgid ""
+"Set a specific removal strategy that will be used regardless of the source "
+"location for this product category"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__user_signature
+msgid "Signature"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_cost_method
+msgid ""
+"Standard Price: The products are valued at their standard cost defined on the product.\n"
+"        Average Cost (AVCO): The products are valued at weighted average cost.\n"
+"        First In First Out (FIFO): The products are valued supposing those that enter the company first will also leave it first.\n"
+"        "
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__start_date
+msgid "Start Date"
+msgstr "วันที่เริ่มต้น"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__state
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__status
+msgid "Status"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_stock_account_input_categ_id
+msgid "Stock Input Account"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_stock_journal
+msgid "Stock Journal"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_stock_account_output_categ_id
+msgid "Stock Output Account"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__property_stock_valuation_account_id
+msgid "Stock Valuation Account"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__amount_tax
+msgid "Taxes"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_account_expense_categ_id
+msgid ""
+"The expense is accounted for when a vendor bill is validated, except in "
+"anglo-saxon accounting with perpetual inventory valuation in which case the "
+"expense (Cost of Goods Sold account) is recognized at the customer invoice "
+"validation."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__product_count
+msgid ""
+"The number of products under this category (Does not consider the children "
+"categories)"
+msgstr ""
+
+#. module: purchase_request
+#: code:addons/purchase_request/models/pr.py:0
+#, python-format
+msgid "This PR is over budget!!"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_account_creditor_price_difference_categ
+msgid ""
+"This account will be used to value price difference between purchase price "
+"and accounting cost."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_account_income_categ_id
+msgid "This account will be used when validating a customer invoice."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__amount_total
+msgid "Total"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_sale_order__total_discount
+msgid "Total Discount"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_mytest_base_model3__total_route_ids
+msgid "Total routes"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__type
+msgid "Type"
+msgstr "ประเภทโครงการ"
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__my_url
+msgid "URL"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr_line__price
+msgid "Unit Price"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__amount_untaxed
+msgid "Untaxed Amount"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__pr_project__type__u
+msgid "Urgent"
+msgstr "เร่งด่วน"
+
+#. module: purchase_request
+#: model:res.groups,name:purchase_request.group_pr_user
+msgid "User"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__user_attachments
+msgid "User Attachments"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_pr__partner_id
+msgid "Vendor"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_rating__4
+msgid "Very High"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields.selection,name:purchase_request.selection__widget_test__my_rating__0
+msgid "Very Low"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_widget_test__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_widget_test__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_stock_valuation_account_id
+msgid ""
+"When automated inventory valuation is enabled on a product, this account "
+"will hold the current value of the products."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_stock_account_input_categ_id
+msgid ""
+"When doing automated inventory valuation, counterpart journal items for all incoming stock moves will be posted in this account,\n"
+"                unless there is a specific valuation account set on the source location. This is the default value for all products in this category.\n"
+"                It can also directly be set on each product."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_stock_account_output_categ_id
+msgid ""
+"When doing automated inventory valuation, counterpart journal items for all outgoing stock moves will be posted in this account,\n"
+"                unless there is a specific valuation account set on the destination location. This is the default value for all products in this category.\n"
+"                It can also directly be set on each product."
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,help:purchase_request.field_mytest_base_model3__property_stock_journal
+msgid ""
+"When doing automated inventory valuation, this is the Accounting Journal in "
+"which entries will be automatically posted when stock moves are processed."
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.view_widget_form
+msgid "Widget Form"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.actions.act_window,name:purchase_request.action_widget_list
+#: model:ir.ui.menu,name:purchase_request.menu_widget_action
+msgid "Widgets"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model.fields,field_description:purchase_request.field_pr_project__year
+msgid "Year"
+msgstr "ปี"
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_mytest_base_model
+msgid "mytest.base_model"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_mytest_base_model2
+msgid "mytest.base_model2"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_mytest_base_model3
+msgid "mytest.base_model3"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_pr_cancel_wizard
+msgid "pr.cancel.wizard"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_pr_pr
+msgid "pr.pr"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_pr_pr_line
+msgid "pr.pr_line"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_pr_project
+msgid "pr.project"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_product_multi_wizard
+msgid "product.multi.wizard"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_report_purchase_request_report_pr_form
+msgid "report.purchase_request.report_pr_form"
+msgstr ""
+
+#. module: purchase_request
+#: model:ir.model,name:purchase_request.model_widget_test
+msgid "widget.test"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "ข้อมูลลูกค้า"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_pr_line
+msgid "จำนวน"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "จำนวนเงินรวมทั้งสิ้น"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "ชื่อลูกค้า"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "ที่อยู่"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "ภาษีมูลค่าเพิ่ม 7%"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_pr_line
+msgid "รวมเงิน"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "รวมเป็นเงิน"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_pr_line
+msgid "ราคา/หน่วย"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_pr_line
+msgid "รายการ"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_pr_line
+msgid "ลำดับ"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_footer
+msgid "วันที่"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_pr_line
+msgid "หน่วยนับ"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.index
+msgid "เพิ่มข้อมูล"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_header
+msgid "เลขประจำตัวผู้เสียภาษี"
+msgstr ""
+
+#. module: purchase_request
+#. openerp-web
+#: code:addons/purchase_request/static/src/xml/dashboard.xml:0
+#, python-format
+msgid "แดชบอร์ด"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_header
+msgid "โทร"
+msgstr ""
+
+#. module: purchase_request
+#: model_terms:ir.ui.view,arch_db:purchase_request.pr_form_title
+msgid "ใบขอซื้อ / Purchase Request"
+msgstr ""

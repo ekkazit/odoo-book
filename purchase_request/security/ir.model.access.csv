@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_purchase_admin,pr.project,model_pr_project,purchase.group_purchase_manager,1,1,1,1
+access_project_purchase_user,pr.project,model_pr_project,purchase.group_purchase_user,1,0,0,0
+access_pr_manager,pr.pr,model_pr_pr,group_pr_manager,1,1,1,1
+access_pr_user,pr.pr,model_pr_pr,group_pr_user,1,0,0,0
+access_pr_line_manager,pr.pr_line,model_pr_pr_line,group_pr_manager,1,1,1,1
+access_pr_line_user,pr.pr_line,model_pr_pr_line,group_pr_user,1,0,0,0
+access_widget_admin,widget.test,model_widget_test,purchase.group_purchase_manager,1,1,1,1
+access_widget_user,widget.test,model_widget_test,purchase.group_purchase_user,1,0,0,0

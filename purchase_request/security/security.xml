@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="ir.rule" id="project_rule01">
+            <field name="name">Project multi-company</field>
+            <field name="model_id" ref="model_pr_project"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+        </record>
+
+        <record model="ir.rule" id="project_rule02">
+            <field name="name">Project access by creator id</field>
+            <field name="model_id" ref="model_pr_project"/>
+            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+            <field name="domain_force">[('create_uid','=',user.id)]</field>
+        </record>
+
+        <record model="ir.rule" id="project_rule03">
+            <field name="name">Project access by admin</field>
+            <field name="model_id" ref="model_pr_project"/>
+            <field name="groups" eval="[(4, ref('base.user_admin'))]"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+        </record>
+    </data>
+</odoo>

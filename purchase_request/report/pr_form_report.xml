@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="pr_form_assets_common" inherit_id="web.report_assets_common">
+        <xpath expr="." position="inside">
+            <link href="/purchase_request/static/src/css/report_style.css" rel="stylesheet"/>
+        </xpath>
+    </template>
+
+    <record id="paperformat_pr_form" model="report.paperformat">
+        <field name="name">A4 Custom</field>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">15</field>
+        <field name="margin_left">10</field>
+        <field name="margin_right">10</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <report
+            id="action_pr_form_report"
+            string="Purchase Request Form"
+            model="pr.pr"
+            report_type="qweb-pdf"
+            name="purchase_request.report_pr_form"
+            paperformat="purchase_request.paperformat_pr_form"
+            print_report_name="'PR Form - %s' % (object.name)"
+    />
+
+    <template id="pr_form_header">
+        <div class="row">
+            <div class="col-2">
+                <img src='/web/binary/company_logo' class="img-responsive"/>
+            </div>
+            <div class="col-1"/>
+            <div class="col-9">
+                <strong>
+                    <span t-esc="doc.company_id.name"/>
+                </strong>
+                <div>
+                    <span t-esc="doc.company_id.street"/>
+                    <span t-esc="doc.company_id.street2"/>
+                </div>
+                <div>
+                    <span t-if="doc.company_id.phone">
+                        โทร
+                        <span t-esc="doc.company_id.phone"/>
+                    </span>
+                </div>
+                <div>เลขประจำตัวผู้เสียภาษี
+                    <span t-esc="doc.company_id.vat"/>
+                    (สำนักงานใหญ่)
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="pr_form_title">
+        <div class="mt-5 mb-4 text-center">
+            <h2>ใบขอซื้อ / Purchase Request</h2>
+            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' %('Code128',doc.name,250,30)"/>
+        </div>
+
+        <div class="row">
+            <div class="col-7">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <strong>โครงการ</strong>
+                        </td>
+                        <td>
+                            <span t-esc="doc.project_id.name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>แผนก</strong>
+                        </td>
+                        <td>
+                            <span t-esc="doc.project_id.department"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>ผู้จัดจำหน่าย</strong>
+                        </td>
+                        <td>
+                            <span t-esc="doc.partner_id.name"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-1"/>
+            <div class="col-4">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <strong>เลขที่</strong>
+                        </td>
+                        <td>
+                            <span t-esc="doc.name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>วันที่</strong>
+                        </td>
+                        <td>
+                            <span t-field="doc.date_pr" t-options='{"widget": "date"}'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>ผู้อนุมัติ</strong>
+                        </td>
+                        <td>
+                            <span t-if="doc.approve_id" t-field="doc.approve_id.name"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </template>
+
+    <template id="pr_form_pr_line">
+        <table class="table mt-4 mb-4">
+            <thead>
+                <tr>
+                    <td class="text-center">ลำดับ</td>
+                    <td>รายการ</td>
+                    <td class="text-right">จำนวน</td>
+                    <td class="text-center">หน่วยนับ</td>
+                    <td class="text-right">ราคา/หน่วย</td>
+                    <td class="text-right">รวมเงิน</td>
+                </tr>
+            </thead>
+            <tbody>
+                <t t-foreach="doc.pr_lines" t-as="l">
+                    <tr>
+                        <td class="text-center">
+                            <span t-esc="l_index + 1"/>
+                        </td>
+                        <td>
+                            <span t-esc="l.name"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-esc="l.qty"/>
+                        </td>
+                        <td class="text-center">
+                        </td>
+                        <td class="text-right">
+                            <span t-esc="'{0:,.2f}'.format(l.price)"/>
+                        </td>
+                        <td class="text-right">
+                            <span t-esc="'{0:,.2f}'.format(l.amount)"/>
+                        </td>
+                    </tr>
+                </t>
+            </tbody>
+        </table>
+    </template>
+
+    <template id="pr_form_footer">
+        <div class="row">
+            <div class="col-7">
+                <strong>หมายเหตุ</strong>
+            </div>
+            <div class="col-5">
+                <table class="table">
+                    <tr>
+                        <th>รวมเป็นเงิน</th>
+                        <th class="text-right">
+                            <span t-esc="'{0:,.2f}'.format(doc.amount_untaxed)"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>ภาษีมูลค่าเพิ่ม 7%</th>
+                        <th class="text-right">
+                            <span t-esc="'{0:,.2f}'.format(doc.amount_tax)"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>จำนวนเงินรวมทั้งสิ้น</th>
+                        <th class="text-right">
+                            <span t-esc="'{0:,.2f}'.format(doc.amount_total)"/>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table class="table mb-5">
+            <tr>
+                <td class="bg-light text-center" style="font-size:12.5pt">
+                    <span t-esc="doc.get_baht_text()"/>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-4">
+                <strong>ผู้ขอซื้อ</strong>
+                <div class="mt-5" style="border-bottom:1px solid #ddd">
+                    <span/>
+                </div>
+                <div class="mt-3">วันที่</div>
+            </div>
+            <div class="col-4">
+                <strong>ผู้ตรวจสอบ</strong>
+                <div class="mt-5" style="border-bottom:1px solid #ddd">
+                    <span/>
+                </div>
+                <div class="mt-3">วันที่</div>
+            </div>
+            <div class="col-4">
+                <strong>ผู้อนุมัติ</strong>
+                <div class="mt-5" style="border-bottom:1px solid #ddd">
+                    <span/>
+                </div>
+                <div class="mt-3">วันที่</div>
+            </div>
+        </div>
+    </template>
+
+    <template id="report_pr_form">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.basic_layout">
+                    <span t-esc="my_text"/>
+                    <table width="100%" border="1">
+                        <tr>
+                            <td>
+                                <t t-call="purchase_request.pr_form_header"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <t t-call="purchase_request.pr_form_title"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:140mm">
+                                <t t-call="purchase_request.pr_form_pr_line"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <t t-call="purchase_request.pr_form_footer"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="footer">
+                        <span>Page:</span>
+                        <span class="page"/>
+                        <span>of</span>
+                        <span class="topage"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

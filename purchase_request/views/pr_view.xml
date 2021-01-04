@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_pr_list">
+        <field name="name">pr.list</field>
+        <field name="model">pr.pr</field>
+        <field name="arch" type="xml">
+            <tree string="PR List">
+                <field name="name"/>
+                <field name="date_pr"/>
+                <field name="project_id"/>
+                <field name="partner_id"/>
+                <field name="amount_total"/>
+                <field name="state" widget="labelstatus"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_pr_form">
+        <field name="name">pr.form</field>
+        <field name="model">pr.pr</field>
+        <field name="arch" type="xml">
+            <form string="PR Form">
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,approve"/>
+                    <button string="Approve" class="oe_highlight" type="object" name="do_pr_approve" attrs="{'invisible': [('state', 'in', ['approve', 'cancel'])]}"/>
+                    <button string="Revise to Draft" type="object" name="do_pr_draft" attrs="{'invisible': [('state', 'in', ['draft', 'approve'])]}"/>
+                    <button string="Cancel" type="object" name="do_pr_cancel" attrs="{'invisible': [('state', 'in', ['cancel', 'approve'])]}"/>
+                    <button string="Print" type="object" name="do_pr_print"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" bg_color="bg-danger" title="Cancelled" attrs="{'invisible': [('state', 'not in', ['cancel'])]}"/>
+                    <widget name="web_ribbon" bg_color="bg-success" title="Approved" attrs="{'invisible': [('state', 'not in', ['approve'])]}"/>
+                    <h1 attrs="{'invisible': [('name', '=', False)]}">
+                        <field name="name" readonly="1"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="project_id"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                            <field name="date_pr"/>
+                            <field name="approve_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="PR Line">
+                            <button string="Add multiple products..." type="object" name="do_add_products" style="margin-bottom:10px"/>
+                            <field name="pr_lines">
+                                <tree string="Select Products" editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="name" string="Description"/>
+                                    <field name="qty" width="150px"/>
+                                    <field name="price" width="150px"/>
+                                    <field name="amount" width="150px" force_save="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Other">
+                        </page>
+                    </notebook>
+                    <group class="oe_subtotal_footer oe_right">
+                        <field name="amount_untaxed" force_save="1" widget="monetary"/>
+                        <field name="amount_tax" force_save="1" widget="monetary"/>
+                        <div class="oe_subtotal_footer_separator oe_inline">
+                            <label for="amount_total"/>
+                        </div>
+                        <field name="amount_total" force_save="1" nolabel="1" class="oe_subtotal_footer_separator" widget="monetary"/>
+                    </group>
+                    <div>
+                        <strong>Note</strong>
+                    </div>
+                    <field name="note" class="oe_inline" placeholder="Remark ..."/>
+                    <div class="oe_clear"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_pr_search">
+        <field name="name">pr.search</field>
+        <field name="model">pr.pr</field>
+        <field name="arch" type="xml">
+            <search string="Department Search">
+                <filter string="ICT" name="search_dept_ict" domain="[('project_id.department', 'in', ['IT', 'ICT'])]"/>
+                <filter string="HR" name="search_dept_hr" domain="[('project_id.department', 'in', ['HR', 'HRM'])]"/>
+            </search>
+        </field>
+    </record>
+</odoo>
